@@ -29,8 +29,7 @@ Este proyecto simula una página institucional para una pastelería local, ideal
 
 ### Sitio en línea
 
-🔗 Puedes ver el sitio desplegado aquí: [https://tusitioenlace.netlify.app](https://tusitioenlace.netlify.app)  
-*(Reemplaza este enlace por el real de Netlify o GitHub Pages si ya lo tienes publicado)*
+🔗 Puedes ver el sitio desplegado aquí: [https://paginareposteria.netlify.app/](https://paginareposteria.netlify.app/)  
 
 ### Ejecutar localmente
 
