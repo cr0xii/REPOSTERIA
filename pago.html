@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pago Confirmado</title>
+  <style>
+    body {
+      font-family: Montserrat, sans-serif;
+      background-color: #f5efeb;
+      color: #2f4156;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .confirmacion {
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+
+    .confirmacion h2 {
+      color: #567c8d;
+      margin-bottom: 20px;
+    }
+
+    .confirmacion p {
+      font-size: 20px;
+    }
+
+    .volver {
+      margin-top: 30px;
+      padding: 10px 20px;
+      background-color: #567c8d;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="confirmacion">
+    <h2>¡Gracias por tu compra!</h2>
+    <p>Total pagado: <span id="totalPago"></span> Bs</p>
+    <a href="index.html" class="volver">Volver al inicio</a>
+  </div>
+
+  <script>
+    const total = localStorage.getItem("totalCompra") || "0.00";
+    document.getElementById("totalPago").textContent = total;
+    localStorage.removeItem("totalCompra");
+  </script>
+</body>
+</html>
