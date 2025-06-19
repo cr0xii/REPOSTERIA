@@ -214,6 +214,60 @@
   color: white
   ;
 }
+#carrito {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--white);
+  border: 2px solid var(--sky-blue);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  max-height: 400px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+#carrito h3 {
+  margin-bottom: 10px;
+  color: var(--teal);
+}
+
+#lista-carrito {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 10px;
+}
+
+#lista-carrito li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  padding: 5px 0;
+  font-size: 14px;
+}
+
+#total {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+#vaciar-carrito {
+  margin-top: 10px;
+  background-color: var(--teal);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#vaciar-carrito:hover {
+  background-color: var(--navy);
+}
+
   </style>
 </head>
 <body>
@@ -256,41 +310,49 @@
       <img src="https://www.recetasnestle.com.ve/sites/default/files/srh_recipes/e2928ff551a360cdadb4e5a2528841b7.jpg" alt="Pastel de chocolate">
       <h4>Pastel de Chocolate</h4>
       <p>85 Bs</p>
+      <button class="agregar-carrito">Añadir</button>
     </div>
     <div class="producto">
       <img src="https://images.aws.nestle.recipes/resized/d4a70d146ddcd8f31e39c1f576d2e08f_bak---01---tres-leches-cake-586_1080_850.jpg" alt="Pastel tres leches">
       <h4>Pastel Tres Leches</h4>
       <p>125 Bs</p>
+      <button class="agregar-carrito">Añadir</button>
     </div>
     <div class="producto">
       <img src="https://www.infobae.com/new-resizer/DGoMOTuyK29Gwu_0GG0rzZg4VGk=/arc-anglerfish-arc2-prod-infobae/public/52E6H6YM2NHAHHAR6S7SL47SEM.jpg" alt="Pastel Red Velvet">
       <h4>Pastel Red Velvet</h4>
       <p>150 Bs</p>
+      <button class="agregar-carrito">Añadir</button>
     </div>
     <div class="producto">
       <img src="https://www.recetasnestle.com.ec/sites/default/files/styles/recipe_detail_desktop_new/public/srh_recipes/7f45d6f8807ebc775928651a3398dce9.png?itok=Xgr1MAc_" alt="Tiramisu">
       <h4>Tiramisu</h4>
       <p>155 Bs</p>
+      <button class="agregar-carrito">Añadir</button>
     </div>
     <div class="producto">
       <img src="https://coosol.es/wp-content/uploads/2023/05/rebanada-pastel-zanahoria-dulce-mesa-madera-1.jpg" alt="Pastel de zanahoria">
       <h4>Pastel de Zanahoria</h4>
       <p>120 Bs</p>
+      <button class="agregar-carrito">Añadir</button>
     </div>
     <div class="producto">
       <img src="https://cdn7.kiwilimon.com/recetaimagen/2854/640x640/31646.jpg.webp" alt="Cheesecake">
       <h4>Cheesecake</h4>
       <p>135 Bs</p>
+      <button class="agregar-carrito">Añadir</button>
     </div>
     <div class="producto">
       <img src="https://www.elglobo.com.mx/cdn/shop/products/497131-1_800x.jpg?v=1618602666" alt="Pastel de durazno">
       <h4>Pastel de Durazno</h4>
       <p>140 Bs</p>
+      <button class="agregar-carrito">Añadir</button>
     </div>
     <div class="producto">
       <img src="https://www.laylita.com/recetas/wp-content/uploads/Pastel-o-bizcocho-de-vainilla-con-capas-de-fresas-y-crema.jpg" alt="Pastel de fresas">
       <h4>Pastel de Fresas</h4>
       <p>150 Bs</p>
+      <button class="agregar-carrito">Añadir</button>
     </div>
   </div>
 </div>
@@ -302,41 +364,49 @@
       <img src="https://www.panaderiateboyas.es/articulos/imagenes/32.jpg" alt="Rollo de nuez">
       <h4>Rollo de nuez</h4>
       <p>85 Bs</p>
+      <button class="agregar-carrito">Añadir</button>
     </div>
     <div class="producto">
       <img src="https://www.recetasnestle.com.mx/sites/default/files/srh_recipes/07f794f879714ed669058d0bd5148b24.jpg" alt="Panqué marmoleado">
       <h4>Panqué marmoleado</h4>
       <p>85 Bs</p>
+      <button class="agregar-carrito">Añadir</button>
     </div>
     <div class="producto">
       <img src="https://imag.bonviveur.com/cinnamon-rolls.jpg" alt="Rollo de Canela">
       <h4>Rollo de Canela</h4>
       <p>85 Bs</p>
+      <button class="agregar-carrito">Añadir</button>
     </div>
     <div class="producto">
       <img src="https://notonlysaladblog.com/wp-content/uploads/2017/07/Alf-maicena-3-Large.jpg" alt="Alfajor">
       <h4>Alfajor</h4>
       <p>85 Bs</p>
+      <button class="agregar-carrito">Añadir</button>
     </div>
     <div class="producto">
       <img src="https://cocinalocal.cl/wp-content/uploads/2021/08/pie-de-limon.jpg" alt="Pie de Limon">
       <h4>Pie de Limon</h4>
       <p>85 Bs</p>
+      <button class="agregar-carrito">Añadir</button>
     </div>
     <div class="producto">
       <img src="https://sabor.eluniverso.com/wp-content/uploads/2024/06/shutterstock_2467116729-scaled.jpg" alt="Pie de Fresa">
       <h4>Pie de Fresa</h4>
       <p>85 Bs</p>
+      <button class="agregar-carrito">Añadir</button>
     </div>
     <div class="producto">
       <img src="https://placeralplato.com/files/2017/06/Bombas-de-crema-pastelera-e1496933177383.jpg" alt="Bomba de Crema">
       <h4>Bomba de Crema</h4>
       <p>85 Bs</p>
+      <button class="agregar-carrito">Añadir</button>
     </div>
     <div class="producto">
       <img src="https://www.clarin.com/img/2025/02/25/4puqndeoH_1256x620__2.jpg" alt="Donas">
       <h4>Donas</h4>
       <p>85 Bs</p>
+      <button class="agregar-carrito">Añadir</button>
     </div>
   </div>
   </div>
@@ -348,41 +418,49 @@
       <img src="https://grupovenado.com/wp-content/uploads/2020/10/Marraqueta-featured.jpg" alt="Rollo de nuez">
       <h4>Marraqueta</h4>
       <p>85 Bs</p>
+      <button class="agregar-carrito">Añadir</button>
     </div>
     <div class="producto">
       <img src="https://www.gastronomiavasca.net/uploads/image/file/4329/pan_de_molde.jpg" alt="Rollo de nuez">
       <h4>Pan en Molde</h4>
       <p>85 Bs</p>
+      <button class="agregar-carrito">Añadir</button>
     </div>
     <div class="producto">
       <img src="https://www.clarin.com/2021/10/19/FrVhOYZJY_1200x0__1.jpg" alt="Rollo de nuez">
       <h4>Pan Integral</h4>
       <p>85 Bs</p>
+      <button class="agregar-carrito">Añadir</button>
     </div>
     <div class="producto">
       <img src="https://img-global.cpcdn.com/recipes/4c7d9a92963de13b/400x400cq90/photo.jpg" alt="Rollo de nuez">
       <h4>Pan Baguette</h4>
       <p>85 Bs</p>
+      <button class="agregar-carrito">Añadir</button>
     </div>
     <div class="producto">
       <img src="https://i.ytimg.com/vi/OyBIJKk7wvU/maxresdefault.jpg" alt="Rollo de nuez">
       <h4>Pan de Arani</h4>
       <p>85 Bs</p>
+      <button class="agregar-carrito">Añadir</button>
     </div>
     <div class="producto">
       <img src="https://estaticos.unitel.bo/binrepository/1200x652/0c11/1200d630/none/246276540/PULO/captura-de-pantalla-2024-05-16-105103_101-8984330_20240516145252.jpg" alt="Rollo de nuez">
       <h4>Pan de Batalla</h4>
       <p>85 Bs</p>
+      <button class="agregar-carrito">Añadir</button>
     </div>
     <div class="producto">
       <img src="https://fridolin.com.bo/wp-content/uploads/2020/06/pan-de-arroz.jpg" alt="Rollo de nuez">
       <h4>Pan de Arroz</h4>
       <p>85 Bs</p>
+      <button class="agregar-carrito">Añadir</button>
     </div>
     <div class="producto">
       <img src="https://enrilemoine.com/wp-content/uploads/2024/06/pan-frances-by-enrilemoine-13-500x375.webp" alt="Rollo de nuez">
       <h4>Pan Frances</h4>
       <p>85 Bs</p>
+      <button class="agregar-carrito">Añadir</button>
     </div>
   </div>
   </div>
@@ -397,21 +475,78 @@
       <a href="https://www.tiktok.com/@sebafakee">TikTok</a>
     </p>
   </footer>
+<div id="carrito" style="position: fixed; bottom: 20px; right: 20px; background: var(--white); border: 2px solid var(--sky-blue); border-radius: 10px; padding: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); z-index: 1000; width: 300px;">
+  <h3 style="margin-bottom: 10px; color: var(--navy);">🛒 Carrito</h3>
+  <ul id="lista-carrito" style="list-style: none; padding-left: 0; margin-bottom: 10px;"></ul>
+  <p><strong>Total:</strong> <span id="total">0.00</span> Bs</p>
+  <button onclick="realizarPago()" style="margin-top: 10px; padding: 10px 20px; background-color: var(--teal); color: white; border: none; border-radius: 5px; cursor: pointer;">Pagar</button>
+  <button onclick="vaciarCarrito()" style="margin-top: 10px; margin-left: 10px; padding: 10px 20px; background-color: crimson; color: white; border: none; border-radius: 5px; cursor: pointer;">Vaciar</button>
+</div>
+
+
 
 </body>
 <script>
+  const carrito = [];
+  const listaCarrito = document.getElementById("lista-carrito");
+  const totalSpan = document.getElementById("total");
+
+  document.querySelectorAll(".producto").forEach(producto => {
+    producto.addEventListener("click", () => {
+      const nombre = producto.querySelector("h4").textContent;
+      const precioTexto = producto.querySelector("p").textContent;
+      const precio = parseFloat(precioTexto.replace(" Bs", "").replace(",", "."));
+
+      carrito.push({ nombre, precio });
+      actualizarCarrito();
+    });
+  });
+
+  function actualizarCarrito() {
+    listaCarrito.innerHTML = "";
+    let total = 0;
+
+    carrito.forEach((item, index) => {
+      const li = document.createElement("li");
+      li.innerHTML = `
+        ${item.nombre} - ${item.precio.toFixed(2)} Bs 
+        <button onclick="eliminarProducto(${index})" style="margin-left:10px; background: none; border: none; color: crimson; cursor: pointer;">❌</button>
+      `;
+      listaCarrito.appendChild(li);
+      total += item.precio;
+    });
+
+    totalSpan.textContent = total.toFixed(2);
+  }
+
+  function eliminarProducto(index) {
+    carrito.splice(index, 1);
+    actualizarCarrito();
+  }
+
+  function vaciarCarrito() {
+    carrito.length = 0;
+    actualizarCarrito();
+  }
+
+  function realizarPago() {
+    const total = parseFloat(totalSpan.textContent) || 0;
+    localStorage.setItem("totalCompra", total.toFixed(2));
+    window.location.href = "pago.html";
+  }
+
+ 
   document.querySelectorAll(".categoria").forEach(btn => {
     btn.addEventListener("click", () => {
       const selected = btn.getAttribute("data-menu");
-      
+
       document.querySelectorAll(".submenu").forEach(menu => {
-        if (menu.id === selected) {
-          menu.style.display = menu.style.display === "block" ? "none" : "block";
-        } else {
-          menu.style.display = "none";
-        }
+        menu.style.display = menu.id === selected ? (menu.style.display === "block" ? "none" : "block") : "none";
       });
     });
   });
 </script>
+
+
+
 </html>
